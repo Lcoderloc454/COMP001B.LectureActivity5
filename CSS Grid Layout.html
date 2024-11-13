@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <link rel="stylesheet" href="Bootstrap Grid Layout.html">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: 100px auto 100px
+            grid-template-columns: 1fr;
+            height: 100vh
+        }
+
+        header {
+            background-color: rgb(77, 146, 146);
+            color: rgb(122, 30, 30);
+            text-align: center;
+            line-height: 100px;
+        }
+
+        footer {
+            background-color: rgb(46, 107, 107);
+            color: rgb(99, 26, 26);
+            text-align: center;
+            line-height: 100px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 2fr 4fr 2fr;
+            gap: 20px;
+        }
+
+        .nav {
+            background-color: gray;
+        }
+
+        .content {
+            background-color: rgb(52, 52, 117);
+        }
+
+        .sidebar {
+            background-color: rgb(21, 110, 21);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            Header
+        </header>
+        <main>
+            <div class="nav">
+                Nav
+            </div>
+            <div class="content">
+                Main Content
+            </div>
+            <div class="sidebar">
+                Sidebar
+            </div>
+        </main>
+        <footer>
+            Footer
+        </footer>
+    </div>
+</body>
+</html>
